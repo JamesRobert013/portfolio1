@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div style={{ backgroundColor: theme.secondary }}>
-      <Router>
+      <Router basename="/portfolio1git ">
         <ScrollToTop />
         <Routes>
           <Route path='/' element={<HomePage />} exact />
