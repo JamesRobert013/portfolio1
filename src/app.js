@@ -14,16 +14,16 @@ function App() {
 
   return (
     <div style={{ backgroundColor: theme.secondary }}>
-      <Router path="/portfolio1">
+      <Router basename="/portfolio1">
         <ScrollToTop />
         <Routes>
           <Route path='/' element={<HomePage />} exact />
           <Route path='/blog' element={<BlogPage />} exact />
           <Route path='/projects' element={<ProjectPage />} exact />
-          <Route
+          {/* <Route
             path="*"
             element={<Navigate to="/" replace />}
-          />
+          /> */}
         </Routes>
       </Router>
       <BackToTop />
